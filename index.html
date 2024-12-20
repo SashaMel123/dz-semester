@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт з найкращими анекдотами для гарного настрою.">
+    <meta name="keywords" content="анекдоти, жарти, гумор, сміх">
+    <meta name="author" content="Ваше Ім'я">
+    <title>Anekdotus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Anekdotus</h1>
+        <button id="burger-menu">☰</button>
+        <nav id="burger-nav">
+            <ul>
+                <li><a href="#" id="show-style-panel">Налаштування стилю</a></li>
+                <li><a href="#" id="show-auth-panel">Авторизація</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="funny-pictures">
+            <h2>Смішні картинки</h2>
+            <div class="gallery">
+                <img src="image\1.png" alt="Funny image 1" class="gallery-item">
+                <img src="image\2.jpg" alt="Funny image 2" class="gallery-item">
+                <img src="image\3.jpg" alt="Funny image 3" class="gallery-item">
+            </div>
+        </div>
+        
+        <section id="home" class="active">
+            <h2>Анекдоти дня</h2>
+            <article>
+                <h3>Анекдот 1</h3>
+                <p>Приходить чоловік додому і каже: "Дорогенька, я виграв мільйон!"</p>
+            </article>
+            <article>
+                <h3>Анекдот 2</h3>
+                <p>Стукіт у двері: "Хто там?" — "Щастя". — "Брехня! Щастя не стукає, воно приходить тихо!".</p>
+            </article>
+            <article>
+                <h3>Анекдот 3</h3>
+                <p>Слухається справа про зґвалтування. У залі суду з’являється позивачка в ультракороткій спідниці. Суддя запитує в неї:
+                    — Ви пропонуєте почати просто з огляду місця злочину?</p>
+            </article>
+        </section>
+        <div class="similar-projects">
+            <h2>Подібні проекти</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <img src="image\6.png" alt="Project 1" class="project-thumbnail">
+                    <h3>Проект 1</h3>
+                    <a href="https://tourbaza.com.ua/smishni-anekdoty/" target="_blank">тицяй</a>
+                </div>
+                <div class="project-item">
+                    <img src="image\4.jpg" alt="Project 2" class="project-thumbnail">
+                    <h3>Проект 2</h3>
+                    <a href="https://vseosvita.ua/blogs/duzhe-smishni-ukrainski-anekdoty-74996.html" target="_blank">тицяй</a>
+                </div>
+                <div class="project-item">
+                    <img src="image\5.jpg" alt="Project 3" class="project-thumbnail">
+                    <h3>Проект 3</h3>
+                    <a href="https://rivnepravo.com.ua/index.php/anekdoty?start=1040" target="_blank">тицяй</a>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <div id="style-panel">
+        <h3>Налаштування стилів</h3>
+        <label for="bg-color">Колір фону:</label>
+        <input type="color" id="bg-color" value="#f8f9fa">
+        <label for="text-color">Колір тексту:</label>
+        <input type="color" id="text-color" value="#000000">
+        <label for="font-size">Розмір шрифту:</label>
+        <input type="range" id="font-size" min="12" max="30" value="16">
+    </div>
+    <div id="auth-panel">
+        <h3>Авторизація</h3>
+        <form id="auth-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Увійти</button>
+        </form>
+    </div>    
+    <footer>
+        <p>© 2024 Anekdotus. Всі права захищено.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
